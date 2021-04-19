@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="This is a website on internet" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="index.css" />
+    <title>Retail Zipline Slideshow</title>
+  </head>
+  <body>
+    <header>
+      <h1>Retail Zipline Slideshow</h1>
+    </header>
+    <main>
+      <!-- previous image button -->
+      <button type="button" id="prev">
+        <!-- chevron left svg -->
+        <svg viewBox="0 0 32 32">
+          <polygon points="21,4 9,16 21,28"/>
+        </svg>
+        <!-- text for a11y -->
+        <span>Previous</span>
+      </button>
+      <section class="gallery">
+        <!-- fallback if no JS is not loaded -->
+        <p id="image-details">No images were loaded</p>
+        <!-- placehoder for image -->
+        <div id="image-container"></div>
+      </section>
+      <!-- next image button -->
+      <button type="button" id="next">
+        <!-- chevron right svg -->
+        <svg viewBox="0 0 32 32">
+          <polygon points="11,28 23,16 11,4"/>
+        </svg>
+        <!-- text for a11y -->
+        <span>Next</span>
+      </button>
+    </main>
+    <footer><p>Created by Andrew [Pez] Pengelly</p></footer>
+    <!-- script at end of document -->
+    <!-- ensures structure in place before load-->
+    <script defer src="./script.js"></script>
+  </body>
+</html>
